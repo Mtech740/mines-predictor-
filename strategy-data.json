@@ -1,0 +1,12 @@
+[
+  {
+    "strategy_name": "Diagonal Safe Tile Strategy",
+    "description": "Start from the top-left and move diagonally to bottom-right. Avoid center grid. Works best on 3 mines.",
+    "moves": ["A1", "B2", "C3", "D4"],
+    "mines": 3,
+    "grid_size": "5x5",
+    "risk_level": "Low",
+    "success_rate": "7/10",
+    "source": "Reddit - /r/gamblingstrategy"
+  }
+]
