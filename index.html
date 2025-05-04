@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mine Predictor</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Mine Predictor</h1>
+
+  <div id="controls">
+    <button onclick="predictSafeTiles()">Predict</button>
+    <button onclick="restartPrediction()">Restart</button>
+  </div>
+
+  <div id="grid"></div>
+
+  <div id="result"></div>
+  <div id="accuracy">Prediction Accuracy: <span id="accuracyValue">0%</span></div>
+
+  <div style="margin-top: 20px;">
+    <label for="roobet-link">Roobet Mines Link:</label>
+    <input type="text" id="roobet-link" placeholder="https://roobet.com/casino/game/mines" style="width: 300px; padding: 5px;">
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
