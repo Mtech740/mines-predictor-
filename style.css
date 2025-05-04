@@ -1,0 +1,74 @@
+body {
+  background: linear-gradient(to bottom right, #1e1e2f, #2d2d3a);
+  color: #f0f0f0;
+  font-family: 'Segoe UI', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  min-height: 100vh;
+}
+
+h1 {
+  margin-bottom: 10px;
+  font-size: 2rem;
+  color: #00ffc3;
+}
+
+#controls {
+  margin-bottom: 15px;
+}
+
+button {
+  background-color: #00ffc3;
+  color: #1e1e2f;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 10px;
+  margin: 0 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background-color: #00cfa5;
+}
+
+#grid {
+  display: grid;
+  grid-template-columns: repeat(5, 60px);
+  grid-template-rows: repeat(5, 60px);
+  gap: 8px;
+  margin-top: 20px;
+}
+
+.tile {
+  width: 60px;
+  height: 60px;
+  background-color: #2f2f45;
+  border-radius: 12px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.tile.safe {
+  background-color: #213b2f;
+  color: #00ff8c;
+}
+
+.tile.mine {
+  background-color: #3d1f1f;
+  color: #ff4d4d;
+}
+
+#result, #accuracy {
+  margin-top: 15px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #ddd;
+}
