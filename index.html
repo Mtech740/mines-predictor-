@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Smart Mines Predictor</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #111;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+    }
+
+    #grid {
+      display: grid;
+      grid-template-columns: repeat(5, 60px);
+      grid-gap: 10px;
+      justify-content: center;
+      margin-top: 20px;
+    }
+
+    .tile {
+      width: 60px;
+      height: 60px;
+      background-color: #333;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .tile.predicted {
+      background-color: #3498db; /* blue = safe prediction */
+    }
+
+    .tile.mine {
+      background-color: #e74c3c; /* red = mine (wrong guess) */
+    }
+
+    .tile.correct {
+      background-color: #2ecc71; /* green = correct prediction */
+    }
+
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: #2980b9;
+      border: none;
+      border-radius: 5px;
+      color: white;
+      margin-top: 20px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #3498db;
+    }
+
+    #accuracy {
+      margin-top: 15px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <h1>Smart Mines Predictor</h1>
+  <button id="predict-button">Predict Safe Tiles</button>
+  <p id="accuracy">Accuracy (last 10): 0%</p>
+  <div id="grid"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
